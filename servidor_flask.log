@@ -1,0 +1,102 @@
+2025-04-06 18:28:53,910 - INFO - Servidor TCP iniciado en 127.0.0.1:8809
+2025-04-06 18:28:53,986 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-06 18:28:53,986 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-06 18:28:53,987 - INFO -  * Restarting with stat
+2025-04-06 18:28:54,219 - WARNING -  * Debugger is active!
+2025-04-06 18:28:54,223 - INFO -  * Debugger PIN: 594-573-149
+2025-04-06 18:32:21,361 - INFO - Servidor TCP iniciado en 127.0.0.1:8809
+2025-04-06 18:32:21,391 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-06 18:32:21,391 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-06 18:32:21,393 - INFO -  * Restarting with stat
+2025-04-06 18:32:21,652 - WARNING -  * Debugger is active!
+2025-04-06 18:32:21,656 - INFO -  * Debugger PIN: 594-573-149
+2025-04-06 18:35:12,861 - INFO - 127.0.0.1 - - [06/Apr/2025 18:35:12] "GET / HTTP/1.1" 200 -
+2025-04-06 18:35:12,922 - INFO - 127.0.0.1 - - [06/Apr/2025 18:35:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-06 18:35:26,297 - INFO - Servidor TCP iniciado en 127.0.0.1:8809
+2025-04-06 18:35:26,322 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-06 18:35:26,322 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-06 18:35:26,323 - INFO -  * Restarting with stat
+2025-04-06 18:35:26,553 - WARNING -  * Debugger is active!
+2025-04-06 18:35:26,556 - INFO -  * Debugger PIN: 594-573-149
+2025-04-06 18:37:47,605 - INFO - Servidor TCP iniciado en 127.0.0.1:8809
+2025-04-06 18:37:47,628 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-06 18:37:47,628 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-06 18:37:47,629 - INFO -  * Restarting with stat
+2025-04-06 18:37:47,859 - WARNING -  * Debugger is active!
+2025-04-06 18:37:47,862 - INFO -  * Debugger PIN: 594-573-149
+2025-04-06 18:39:26,141 - INFO - Servidor TCP iniciado en 127.0.0.1:8809
+2025-04-06 18:39:26,161 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-06 18:39:26,161 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-06 18:39:26,163 - INFO -  * Restarting with stat
+2025-04-06 18:39:26,407 - WARNING -  * Debugger is active!
+2025-04-06 18:39:26,411 - INFO -  * Debugger PIN: 594-573-149
+2025-04-06 18:41:04,985 - INFO -  * Detected change in 'C:\\Users\\javie\\Desktop\\CodeArchive\\PED\\ClienteServidor\\app.py', reloading
+2025-04-06 18:41:05,006 - INFO -  * Restarting with stat
+2025-04-06 18:41:05,248 - INFO - Servidor TCP iniciado en 127.0.0.1:8810
+2025-04-06 18:41:05,261 - WARNING -  * Debugger is active!
+2025-04-06 18:41:05,264 - INFO -  * Debugger PIN: 594-573-149
+2025-04-06 18:41:06,300 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-06 18:41:06,300 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-06 18:41:06,302 - INFO -  * Restarting with stat
+2025-04-06 18:41:06,535 - WARNING -  * Debugger is active!
+2025-04-06 18:41:06,538 - INFO -  * Debugger PIN: 594-573-149
+2025-04-06 18:42:24,114 - INFO -  * Detected change in 'C:\\Users\\javie\\Desktop\\CodeArchive\\PED\\ClienteServidor\\app.py', reloading
+2025-04-06 18:42:24,116 - INFO -  * Detected change in 'C:\\Users\\javie\\Desktop\\CodeArchive\\PED\\ClienteServidor\\app.py', reloading
+2025-04-06 18:42:24,134 - INFO -  * Restarting with stat
+2025-04-06 18:42:24,136 - INFO -  * Restarting with stat
+2025-04-06 18:42:24,372 - INFO - Servidor TCP iniciado en 127.0.0.1:8810
+2025-04-06 18:42:24,373 - INFO - Servidor TCP iniciado en 127.0.0.1:8810
+2025-04-06 18:42:24,385 - WARNING -  * Debugger is active!
+2025-04-06 18:42:24,387 - WARNING -  * Debugger is active!
+2025-04-06 18:42:24,388 - INFO -  * Debugger PIN: 594-573-149
+2025-04-06 18:42:24,390 - INFO -  * Debugger PIN: 594-573-149
+2025-04-06 18:42:30,548 - INFO - Servidor TCP iniciado en 127.0.0.1:8810
+2025-04-06 18:42:30,569 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-06 18:42:30,569 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-06 18:42:30,570 - INFO -  * Restarting with stat
+2025-04-06 18:42:30,788 - INFO - Servidor TCP iniciado en 127.0.0.1:8810
+2025-04-06 18:42:30,802 - WARNING -  * Debugger is active!
+2025-04-06 18:42:30,806 - INFO -  * Debugger PIN: 594-573-149
+2025-04-06 18:43:39,976 - INFO - 127.0.0.1 - - [06/Apr/2025 18:43:39] "GET / HTTP/1.1" 200 -
+2025-04-06 18:54:14,582 - INFO - 127.0.0.1 - - [06/Apr/2025 18:54:14] "GET / HTTP/1.1" 200 -
+2025-04-06 18:54:26,899 - INFO - Número recibido por web: 2
+2025-04-06 18:54:26,899 - INFO - Respuesta web enviada: El número 2 es primo
+2025-04-06 18:54:26,899 - INFO - 127.0.0.1 - - [06/Apr/2025 18:54:26] "POST /check_prime HTTP/1.1" 200 -
+2025-04-06 18:54:28,500 - INFO - Conexión TCP establecida con ('127.0.0.1', 38893)
+2025-04-06 18:54:28,500 - INFO - Número recibido por TCP: 2
+2025-04-06 18:54:28,500 - INFO - Respuesta TCP enviada: El número 2 es primo
+2025-04-06 18:54:28,500 - INFO - Conexión TCP cerrada con ('127.0.0.1', 38893)
+2025-04-06 18:54:28,500 - INFO - 127.0.0.1 - - [06/Apr/2025 18:54:28] "POST /check_prime_tcp HTTP/1.1" 200 -
+2025-04-06 18:54:33,165 - INFO - Conexión TCP establecida con ('127.0.0.1', 38905)
+2025-04-06 18:54:33,165 - INFO - Número recibido por TCP: 21
+2025-04-06 18:54:33,165 - INFO - Respuesta TCP enviada: El número 21 no es primo
+2025-04-06 18:54:33,165 - INFO - Respuesta TCP recibida: El número 21 no es primo
+2025-04-06 18:54:33,165 - INFO - Conexión TCP cerrada con ('127.0.0.1', 38905)
+2025-04-06 18:54:33,165 - INFO - 127.0.0.1 - - [06/Apr/2025 18:54:33] "POST /check_prime_tcp HTTP/1.1" 200 -
+2025-04-06 19:01:02,203 - INFO - 127.0.0.1 - - [06/Apr/2025 19:01:02] "GET / HTTP/1.1" 200 -
+2025-04-06 19:01:08,791 - INFO - 127.0.0.1 - - [06/Apr/2025 19:01:08] "GET / HTTP/1.1" 200 -
+2025-04-06 19:19:44,027 - INFO -  * Detected change in 'C:\\Users\\javie\\Desktop\\CodeArchive\\PED\\ClienteServidor\\app.py', reloading
+2025-04-06 19:19:44,049 - INFO -  * Restarting with stat
+2025-04-06 19:19:44,296 - INFO - Servidor TCP iniciado en 127.0.0.1:8810
+2025-04-06 19:19:44,310 - WARNING -  * Debugger is active!
+2025-04-06 19:19:44,314 - INFO -  * Debugger PIN: 594-573-149
+2025-04-06 19:20:03,167 - INFO - 127.0.0.1 - - [06/Apr/2025 19:20:03] "GET / HTTP/1.1" 200 -
+2025-04-06 19:20:20,819 - INFO - Conexión TCP establecida con ('127.0.0.1', 42250)
+2025-04-06 19:20:20,819 - INFO - Número recibido por TCP: 5
+2025-04-06 19:20:20,820 - INFO - Respuesta TCP enviada: El número 5 es primo
+2025-04-06 19:20:20,820 - INFO - Respuesta TCP recibida: El número 5 es primo
+2025-04-06 19:20:20,820 - INFO - Conexión TCP cerrada con ('127.0.0.1', 42250)
+2025-04-06 19:20:20,820 - INFO - 127.0.0.1 - - [06/Apr/2025 19:20:20] "POST /check_prime_tcp HTTP/1.1" 200 -
+2025-04-06 19:21:20,240 - INFO - 127.0.0.1 - - [06/Apr/2025 19:21:20] "GET / HTTP/1.1" 200 -
+2025-04-06 19:21:42,358 - INFO -  * Detected change in 'C:\\Users\\javie\\Desktop\\CodeArchive\\PED\\ClienteServidor\\app.py', reloading
+2025-04-06 19:21:42,380 - INFO -  * Restarting with stat
+2025-04-06 19:21:42,607 - INFO - Servidor TCP iniciado en 127.0.0.1:8810
+2025-04-06 19:21:42,620 - WARNING -  * Debugger is active!
+2025-04-06 19:21:42,623 - INFO -  * Debugger PIN: 594-573-149

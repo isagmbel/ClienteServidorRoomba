@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Números Primos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .container {
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #1abc9c;  /* Cambiado a color de la "rallita" */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+        }
+        button:hover {
+            background-color: #16a085;  /* Un tono más oscuro para el hover */
+        }
+        /* Agregamos el efecto de rallita al botón */
+        button::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: rgba(0,0,0,0.2);
+        }
+        .result {
+            padding: 15px;
+            border-radius: 4px;
+            font-size: 18px;
+            margin-top: 20px;
+            background-color: #e8f4f8;
+            border-left: 5px solid #4a90e2;
+        }
+        .error {
+            background-color: #ffeeee;
+            border-left: 5px solid #d9534f;
+        }
+        .info-box {
+            background-color: #e8f8f5;
+            border-left: 5px solid #1abc9c;
+            padding: 15px;
+            margin-top: 30px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificador de Números Primos</h1>
+    
+    <div class="container">
+        <div class="input-group">
+            <label for="numero">Ingresa un número entero:</label>
+            <input type="number" id="numero" placeholder="Ej: 17">
+        </div>
+        
+        <div class="buttons">
+            <button id="checkDirect">Verificar directamente</button>
+            <button id="checkTcp">Verificar usando TCP</button>
+        </div>
+        
+        <div id="resultado" class="result" style="display: none;"></div>
+    </div>
+    
+    <div class="info-box">
+        <p>Esta aplicación verifica si un número es primo de dos maneras diferentes: la verificación directa, que procesa la solicitud directamente en el servidor web, y la verificación TCP, que envía la solicitud a un servidor TCP dedicado y devuelve la respuesta. Un número primo es aquel que solo es divisible por 1 y por sí mismo.</p>
+    </div>
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const numeroInput = document.getElementById('numero');
+            const checkDirectButton = document.getElementById('checkDirect');
+            const checkTcpButton = document.getElementById('checkTcp');
+            const resultadoDiv = document.getElementById('resultado');
+            
+            // Función para mostrar el resultado
+            function mostrarResultado(mensaje, esError = false) {
+                resultadoDiv.textContent = mensaje;
+                resultadoDiv.style.display = 'block';
+                
+                if (esError) {
+                    resultadoDiv.classList.add('error');
+                } else {
+                    resultadoDiv.classList.remove('error');
+                }
+            }
+            
+            // Verificación directa
+            checkDirectButton.addEventListener('click', function() {
+                const numero = numeroInput.value.trim();
+                
+                if (!numero) {
+                    mostrarResultado('Por favor, ingresa un número.', true);
+                    return;
+                }
+                
+                fetch('/check_prime', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ numero: numero }),
+                })
+                .then(response => response.json())
+                .then(data => {
+                    mostrarResultado(data.resultado, data.resultado.includes('Error'));
+                })
+                .catch(error => {
+                    mostrarResultado('Error al conectar con el servidor: ' + error, true);
+                });
+            });
+            
+            // Verificación TCP
+            checkTcpButton.addEventListener('click', function() {
+                const numero = numeroInput.value.trim();
+                
+                if (!numero) {
+                    mostrarResultado('Por favor, ingresa un número.', true);
+                    return;
+                }
+                
+                fetch('/check_prime_tcp', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ numero: numero }),
+                })
+                .then(response => response.json())
+                .then(data => {
+                    mostrarResultado(data.resultado, data.resultado.includes('Error'));
+                })
+                .catch(error => {
+                    mostrarResultado('Error al conectar con el servidor TCP: ' + error, true);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
